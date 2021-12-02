@@ -75,7 +75,10 @@ public class Game {
         } else {
             score = score + (int) coins;
         }
-        if (coins == 5.0) { currCoins = currCoins + (int) coins; }
+        if (coins == 5.0) {
+            currCoins = currCoins + (int) coins;
+            this.maze.setPoint(currI,currJ,this.maze.getPoint(currI,currJ).setCoins(0.01));
+        }
         return true;
     }
 

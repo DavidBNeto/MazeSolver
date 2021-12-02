@@ -24,6 +24,8 @@ public class Point {
         return coins;
     }
 
+    public Point setCoins(double coins) { this.coins = coins; return this;}
+
     @Override
     public String toString() {
         return "Point{" +

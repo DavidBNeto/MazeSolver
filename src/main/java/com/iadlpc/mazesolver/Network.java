@@ -1,5 +1,7 @@
 package com.iadlpc.mazesolver;
 
+import java.util.Random;
+
 public class Network {
     private Neuron[] hiddenLayer;     //rede neural 8x8x4 -> topologia sugerida em aula
     private Neuron[] outputLayer;
@@ -38,6 +40,7 @@ public class Network {
             outputLayer[i] = new Neuron(tmp);
         }
     }
+
 
     public double[] propagate(double []x){
         if (x == null) { return null; }

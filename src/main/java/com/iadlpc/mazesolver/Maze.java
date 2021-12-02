@@ -82,6 +82,8 @@ public class Maze {
 
     public Point getPoint(int i, int j) { return maze[i][j]; }
 
+    public void setPoint(int i, int j, Point point) { maze[i][j] = point; }
+
     public int getSize() { return this.size; }
 
     public double[] propagate() {
@@ -92,6 +94,6 @@ public class Maze {
         return output;
     }
 
-    public void printNN() { System.out.println(this.nn.toString());}
+    public void printNN() { System.out.println(this.nn.toString()); }
 
 }
