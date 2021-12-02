@@ -4,9 +4,9 @@ public class Point {
 
     private int i;
     private int j;
-    private int coins;
+    private double coins;
 
-    public Point(int i, int j, int coins) {
+    public Point(int i, int j, double coins) {
         this.i = i;
         this.j = j;
         this.coins = coins;
@@ -20,12 +20,17 @@ public class Point {
         return j;
     }
 
-    public int getCoins() {
+    public double getCoins() {
         return coins;
     }
 
     @Override
-    public boolean equals(Object obj) {
-        return ((Point) obj).getI() == this.i && ((Point)obj).getJ() == this.j;
+    public String toString() {
+        return "Point{" +
+                "i=" + i +
+                ", j=" + j +
+                ", coins=" + coins +
+                '}';
     }
+
 }
